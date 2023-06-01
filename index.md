@@ -13,6 +13,7 @@ I am a Computer Science Ph.D. student at Yale University.
 
 ## News
 
-- **[March. 2023]** Completed my undergraduate studies at ECE, NTUA.
+- **[March 2023]** Completed my undergraduate studies at ECE, NTUA.
 
 {% include_relative _includes/publications.md %}
+{% include_relative _includes/certifications.md %}
