@@ -42,7 +42,7 @@ linkedin: https://www.linkedin.com/in/george-typaldos
 
 # Images (e.g., your profile picture and your website's favicon) 
 # "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/images/duomo.jpg
+avatar: ./assets/images/photo.jpg
 favicon: ./assets/images/favicon.png
 favicon_dark: ./assets/images/favicon.png
 
