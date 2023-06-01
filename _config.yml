@@ -18,22 +18,48 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+
+# Basic Info
+
+title: George Typaldos
+position: Ph.D. Student
+affiliation: Yale University 
+email: george.typaldos(at)yale.edu
+
+
+
+
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  George Typaldos academic portfolio.
+
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+#github_username:  jekyll
+
+#google_scholar: https://scholar.google.com/
+cv_link: assets/files/CV_GT.pdf
+github_link: https://github.com/Giotyp
+linkedin: https://www.linkedin.com/in/george-typaldos
+
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: ./assets/img/avatar.png
+#favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
 
 # Build settings
+
 #theme: minima
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: false
+
 remote_theme: yaoyao-liu/minimal-light
-plugins:
-  - jekyll-feed
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -47,8 +73,9 @@ plugins:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
+   - README.md
+   - Gemfile
+   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
