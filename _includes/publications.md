@@ -15,7 +15,8 @@
     <div class="author"><strong>George Typaldos, Wei Tang, Jakub Szefer</strong></div>
     <div class="periodical"><em> IEEE International Conference on Quantum Computing and Engineering (QCE), 2024.</em></div>
     <div class="links">
-      <a href="https://ieeexplore.ieee.org/abstract/document/10821443/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
+    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10821443" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/10821443/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">IEEE Xplore</a>
     </div>
   </div>
 </div>
@@ -35,7 +36,8 @@
     <div class="author"><strong>H Timko, S Albright, T Argyropoulos, H Damerau, K Iliakis, L Intelisano, BE Karlsen-Baeck, I Karpov, A Lasheen, L Medina, D Quartullo, J Repond, AL Vanel, J Esteban Müller, M Schwarz, P Tsapatsaris, G Typaldos</strong></div>
     <div class="periodical"><em>Physical Review Accelerators and Beams, 2023/11/1.</em></div>
     <div class="links">
-      <a href="https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.26.114602" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Website</a>
+    <a href="https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.26.114602" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.26.114602" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Physical Review</a>
     </div>
   </div>
 </div>
