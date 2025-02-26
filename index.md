@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a Computer Science Ph.D. student at Yale University, working with professor [Lin Zhong](https://www.linzhong.org) at the [Efficient Computing Lab](http://www.yecl.org).
+I am a Computer Science Ph.D. student at Yale University, working with professor [Lin Zhong](https://www.linzhong.org) in the [Efficient Computing Lab](http://www.yecl.org).
 
 ## Research Interests
 
