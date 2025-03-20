@@ -4,7 +4,17 @@ layout: homepage
 
 ## About Me
 
-I am a Computer Science Ph.D. student at Yale University, working with professor [Lin Zhong](https://www.linzhong.org) in the [Efficient Computing Lab](http://www.yecl.org).
+I am a Computer Science Ph.D. student at Yale University, working with professor [Lin Zhong](https://www.linzhong.org) in the [Efficient Computing Lab](http://www.yecl.org). 
+I have a wide range of research interests, from systems to quantum computing.
+I also have a passion for music, especially for piano and guitar. 
+
+## Education
+- **2023 - Present:** Yale University
+
+    PhD Candidate in Computer Science
+- **2017 - 2023:** National Technical University of Athens
+
+    Integrated Master of Electrical and Computer Engineering
 
 ## Research Interests
 
