@@ -25,6 +25,7 @@ I also have a passion for music, especially for piano and guitar.
 
 - **Computer Systems:** Operating Systems, Streaming Applications 
 - **High-Performance Computing:** GPU Acceleration, Acceleration Frameworks (e.g. [Ray](https://www.ray.io))
+- **AI & LLMs:** Serving Systems, Inference Optimizations 
 - **Quantum Computing:** Quantum Simulations, Quantum Computing Security
 
 ## News
