@@ -11,6 +11,25 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+    <div class="title">”Quantum Circuit Cutting: A Security Methodology”</div>
+    <div class="author"><strong>George Typaldos, Theodoros Trochatos, Jakub Szefer</strong></div>
+    <div class="periodical"><em> IEEE International Conference on Quantum Computing and Engineering (QCE), 2025. -- to be published</em></div>
+    <div class="links">
+    </div>
+  </div>
+</div>
+</li>
+
+<br>
+
+<li>
+<div class="pub-row">
+
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <!-- <img src="assets/images/new_publication_image.png" class="teaser img-fluid z-depth-1"> -->
+  </div>
+
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title">Leveraging Quantum Circuit Cutting for Obfuscation and Intellectual Property Protection</div>
     <div class="author"><strong>George Typaldos, Wei Tang, Jakub Szefer</strong></div>
     <div class="periodical"><em> IEEE International Conference on Quantum Computing and Engineering (QCE), 2024.</em></div>

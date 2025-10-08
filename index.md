@@ -23,7 +23,9 @@ I also have a passion for music, especially for piano and guitar.
 - **Quantum Computing:** Quantum Simulations, Quantum Computing Security
 
 ## News
-- **[September 2024]** Attended IEEE Quantum Week 2024 at Montreal. 
+- **[September 2025]** Presented my work at IEEE Quantum Week 2025 at Albuquerque, NM.
+- **[February 2025]** [RINGS](https://rings-vo.org) PI 3 at San Diego, CA
+- **[September 2024]** Presented my work at IEEE Quantum Week 2024 at Montreal, Canada. 
 - **[August 2023]** Joined Yale [ECL](http://www.yecl.org) for Graduate Studies. 
 - **[March 2023]** Completed my undergraduate studies at ECE, NTUA.
 
