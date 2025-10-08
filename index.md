@@ -11,7 +11,12 @@ I also have a passion for music, especially for piano and guitar.
 ## Education
 - **2023 - Present:** Yale University
 
-    PhD Candidate in Computer Science
+    PhD in Computer Science
+
+- **2023 - 2025:** Yale University
+
+    MSc in Computer Science
+
 - **2017 - 2023:** National Technical University of Athens
 
     Integrated Master of Electrical and Computer Engineering
