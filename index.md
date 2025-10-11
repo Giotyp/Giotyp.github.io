@@ -24,8 +24,9 @@ I also have a passion for music, especially for piano and guitar.
 ## Research Interests
 
 - **Computer Systems:** Operating Systems, Streaming Applications 
+- **Computer Architecture:** GPU/GPGPU Architecture, Systems Design
 - **High-Performance Computing:** GPU Acceleration, Acceleration Frameworks (e.g. [Ray](https://www.ray.io))
-- **AI & LLMs:** Serving Systems, Inference Optimizations 
+- **AI & LLMs:** Serving Systems, Inference Optimization
 - **Quantum Computing:** Quantum Simulations, Quantum Computing Security
 
 ## News
