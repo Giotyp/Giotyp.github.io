@@ -11,6 +11,27 @@
   </div>
 
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+    <div class="title">Embedding Alignment in Code Generation for Audio</div>
+    <div class="author"><strong>Sam Kouteili, Hiren Madhu, George Typaldos, Mark Santolucito</strong></div>
+    <div class="periodical"><em> arXiv preprint</em></div>
+    <div class="links">
+    <a href="https://arxiv.org/pdf/2508.05473" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+    <a href="https://arxiv.org/abs/2508.05473" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">arXiv</a>
+    </div>
+  </div>
+</div>
+</li>
+
+<br>
+
+<li>
+<div class="pub-row">
+
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <!-- <img src="assets/images/new_publication_image.png" class="teaser img-fluid z-depth-1"> -->
+  </div>
+
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title">Quantum Circuit Cutting: A Security Methodology</div>
     <div class="author"><strong>George Typaldos, Theodoros Trochatos, Jakub Szefer</strong></div>
     <div class="periodical"><em> IEEE International Conference on Quantum Computing and Engineering (QCE), 2025. -- to be published</em></div>
