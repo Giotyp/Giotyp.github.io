@@ -13,7 +13,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
     <div class="title">Embedding Alignment in Code Generation for Audio</div>
     <div class="author"><strong>Sam Kouteili, Hiren Madhu, George Typaldos, Mark Santolucito</strong></div>
-    <div class="periodical"><em> arXiv preprint</em></div>
+    <div class="periodical"><em> NeurIPS AI4Music Workshop, 2025</em></div>
     <div class="links">
     <a href="https://arxiv.org/pdf/2508.05473" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
     <a href="https://arxiv.org/abs/2508.05473" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">arXiv</a>
