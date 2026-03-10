@@ -833,3 +833,126 @@ screen and (max-width: 480px) {
 // Override when user explicitly chose light despite dark OS
 :root[data-theme="light"] .icon-sun { display: none; }
 :root[data-theme="light"] .icon-moon { display: block; }
+
+// Section navigation directory
+html {
+  scroll-behavior: smooth;
+}
+
+.section-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 11px 0 13px;
+  margin-bottom: 32px;
+  border-top: 2px solid rgba(4, 51, 97, 0.18);
+  border-bottom: 1px solid rgba(4, 51, 97, 0.12);
+  font-family: 'Crimson Pro', serif;
+  font-size: 0.87rem;
+  font-variant: small-caps;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+
+  a {
+    color: #7a8a99;
+    text-decoration: none;
+    padding: 0 13px;
+    position: relative;
+    transition: color 0.2s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 13px;
+      right: 13px;
+      height: 1px;
+      background: #043361;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      color: #043361;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  .nav-sep {
+    color: rgba(4, 51, 97, 0.28);
+    font-variant: normal;
+    font-weight: 300;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-nav {
+    border-top-color: rgba(62, 183, 240, 0.2);
+    border-bottom-color: rgba(62, 183, 240, 0.12);
+
+    a {
+      color: #8a9aaa;
+
+      &::after {
+        background: rgb(62, 183, 240);
+      }
+
+      &:hover {
+        color: rgb(62, 183, 240);
+      }
+    }
+
+    .nav-sep {
+      color: rgba(62, 183, 240, 0.25);
+    }
+  }
+}
+
+:root[data-theme="dark"] .section-nav {
+  border-top-color: rgba(62, 183, 240, 0.2);
+  border-bottom-color: rgba(62, 183, 240, 0.12);
+
+  a {
+    color: #8a9aaa;
+
+    &::after {
+      background: rgb(62, 183, 240);
+    }
+
+    &:hover {
+      color: rgb(62, 183, 240);
+    }
+  }
+
+  .nav-sep {
+    color: rgba(62, 183, 240, 0.25);
+  }
+}
+
+:root[data-theme="light"] .section-nav {
+  border-top-color: rgba(4, 51, 97, 0.18);
+  border-bottom-color: rgba(4, 51, 97, 0.12);
+
+  a {
+    color: #7a8a99;
+
+    &::after {
+      background: #043361;
+    }
+
+    &:hover {
+      color: #043361;
+    }
+  }
+
+  .nav-sep {
+    color: rgba(4, 51, 97, 0.28);
+  }
+}

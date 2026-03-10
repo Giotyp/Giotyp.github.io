@@ -2,6 +2,20 @@
 layout: homepage
 ---
 
+<nav class="section-nav" aria-label="Page sections">
+  <a href="#about-me">About</a>
+  <span class="nav-sep">·</span>
+  <a href="#education">Education</a>
+  <span class="nav-sep">·</span>
+  <a href="#research-interests">Research</a>
+  <span class="nav-sep">·</span>
+  <a href="#news">News</a>
+  <span class="nav-sep">·</span>
+  <a href="#publications">Publications</a>
+  <span class="nav-sep">·</span>
+  <a href="#certifications">Certifications</a>
+</nav>
+
 ## About Me
 
 I am a Computer Science Ph.D. student at Yale University, working with professor [Lin Zhong](https://www.linzhong.org) in the [Efficient Computing Lab](http://www.yecl.org). 
