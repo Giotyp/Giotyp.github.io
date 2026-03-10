@@ -13,6 +13,8 @@ layout: homepage
   <span class="nav-sep">·</span>
   <a href="#publications">Publications</a>
   <span class="nav-sep">·</span>
+  <a href="#teaching">Teaching</a>
+  <span class="nav-sep">·</span>
   <a href="#certifications">Certifications</a>
 </nav>
 
@@ -51,4 +53,5 @@ I also have a passion for music, especially for piano and guitar.
 - **[March 2023]** Completed my undergraduate studies at ECE, NTUA.
 
 {% include_relative _includes/publications.md %}
+{% include_relative _includes/teaching.md %}
 {% include_relative _includes/certifications.md %}
