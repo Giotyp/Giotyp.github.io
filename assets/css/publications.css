@@ -1,87 +1,156 @@
-.badge {
-    display: inline-block;
-    padding: 0.25em 0.4em;
-    font-size: 75%;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: baseline;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+/* =====================================================================
+   Publications — lab-notebook treatment
+   Each <li> is a paper "entry". The Bootstrap-ish .col-sm-3 / .col-sm-9
+   structure is preserved so existing HTML inside _includes/publications.md
+   keeps working without rewrites.
+   ===================================================================== */
+
+.publications { margin-top: 1.2rem; }
+
+/* Strip the column padding the inline styles add */
+.publications .pub-row > [class^="col-sm-"] { padding: 0 !important; }
+
+.publications h2 {
+  margin: 0 0 1.6rem;
+  font-size: 1.55rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--ink);
 }
 
-.badge {
-    color: #fff !important;
-    border-radius: 0.125rem;
-    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+.publications ol.bibliography {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: pubcounter;
 }
 
-:root { --global-bg-color: #ffffff; --global-code-bg-color: rgba(181, 9, 172, 0.05); --global-text-color: #000000; --global-text-color-light: #828282; --global-theme-color: #002D72; --global-hover-color: #ffb81c; --global-footer-bg-color: #1c1c1c; --global-footer-text-color: #e8e8e8; --global-footer-link-color: #ffffff; --global-distill-app-color: #828282; }
-
-@media (prefers-color-scheme: dark) { :root { --global-theme-color: rgb(36, 150, 203);}}
-:root[data-theme="dark"] { --global-theme-color: rgb(36, 150, 203); }
-:root[data-theme="light"] { --global-theme-color: #002D72; }
-
-blockquote { background: var(--global-bg-color); border-left: 2px solid var(--global-theme-color); margin: 1.5em 10px; padding: 0.5em 10px; font-size: 1.2rem; }
-
-@media print, screen and (min-width: 480px) {.col-sm-9 {width: 100%;}}
-
-.publications { margin-top: 2rem; }
-
-.publications h1 { color: var(--global-theme-color); font-size: 2rem; text-align: center; margin-top: 1em; margin-bottom: 1em; }
-
-.publications h2 { margin-bottom: 1rem; }
-
-.publications h2 span { font-size: 1.5rem; }
-
-.publications h2.year { color: #e8e8e8; border-top: 1px solid #e8e8e8; margin-top: 2rem; margin-bottom: 0rem; text-align: right; }
-
-.publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
-
-.publications ol.bibliography li { min-height: 110px; margin-bottom: 0.5rem; }
-
-.publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
-
-.publications ol.bibliography li .abbr abbr { display: inline-block; background-color: var(--global-theme-color); padding-left: 1rem; padding-right: 1rem; position: absolute; top: 8px; left: 16px; }
-
-.publications ol.bibliography li .abbr abbr a { color: white; }
-
-.publications ol.bibliography li .abbr abbr a:hover { text-decoration: none; }
-
-.publications ol.bibliography li .abbr .award { color: var(--global-theme-color) !important; border: 1px solid var(--global-theme-color); }
-
-.publications ol.bibliography li .title { font-weight: bolder; }
-
-.publications ol.bibliography li .author a { border-bottom: 1px var(--global-theme-color); }
-
-.publications ol.bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
-
-.publications ol.bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
-
-.publications ol.bibliography li .links a.btn { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
-
-@media (prefers-color-scheme: dark) {
-.publications ol.bibliography li .links a.btn { color: #FFFFFF; border: 1px solid #FFFFFF; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+.publications ol.bibliography > li {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  column-gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--rule);
+  counter-increment: pubcounter;
+  min-height: auto;
+  margin-bottom: 0;
+  position: relative;
 }
 
-:root[data-theme="dark"] .publications ol.bibliography li .links a.btn { color: #FFFFFF; border: 1px solid #FFFFFF; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+/* Numbered marker on the left, like a footnote reference */
+.publications ol.bibliography > li::before {
+  content: "[" counter(pubcounter, decimal-leading-zero) "]";
+  font-family: 'IBM Plex Mono', Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0;
+  padding-top: 0.45em;
+  text-align: left;
+}
 
-:root[data-theme="light"] .publications ol.bibliography li .links a.btn { color: #000000; border: 1px solid #000000; padding-left: 0.5rem; padding-right: 0.5rem; padding-top: 0.1rem; padding-bottom: 0.1rem; }
+/* Drop the unwrapping <br> between <li>s — the dashed border handles separation */
+.publications ol.bibliography > br { display: none; }
 
-.publications ol.bibliography li .links a.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
+/* The pub-row sits in column 2 */
+.publications ol.bibliography > li > br { display: none; }
+.publications ol.bibliography > li .pub-row {
+  grid-column: 2;
+  display: block;
+  align-items: initial;
+}
 
-.publications ol.bibliography li .hidden { font-size: 0.875rem; max-height: 0px; overflow: hidden; text-align: justify; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
+/* Hide empty thumbnail columns (we don't have images for any pub yet) */
+.publications .col-sm-3.abbr:empty,
+.publications .col-sm-3.abbr:not(:has(*)) { display: none; }
 
+.publications .title {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+.publications .author {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  margin-bottom: 3px;
+}
+.publications .author strong { font-weight: 400; color: var(--ink-soft); }
+
+.publications .periodical {
+  font-family: 'IBM Plex Mono', Menlo, monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: normal;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+}
+.publications .periodical em { font-style: normal; }
+
+/* Author-self emphasis: bold "George Typaldos" within the .author line.
+   We can't toggle that without inline markup, but the existing markup wraps
+   the whole author list in <strong> — restyle that to plain. */
+
+.publications .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+.publications .links a.btn,
+.publications .links a {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', Menlo, monospace;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+  padding: 2px 8px !important;
+  border-radius: 2px;
+  line-height: 1.55;
+  transition: color 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+.publications .links a.btn:hover,
+.publications .links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Hide the legacy badge styles — we don't use them */
+.badge { display: none; }
+
+/* Hidden abstracts (kept for forward-compat) */
+.publications ol.bibliography li .hidden {
+  font-size: 0.875rem;
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  transition: all 0.15s ease;
+}
+.publications ol.bibliography li .hidden.open { max-height: 100em; }
 .publications ol.bibliography li .hidden p { line-height: 1.4em; margin: 10px; }
 
-.publications ol.bibliography li .hidden pre { font-size: 1em; line-height: 1.4em; padding: 10px; }
+/* Teaser thumbnail — if you ever add images back */
+.publications ol.bibliography li .teaser {
+  border-radius: 2px;
+  border: 1px solid var(--rule);
+  box-shadow: none;
+  height: auto;
+  width: 100%;
+  margin: 0 0 8px;
+  object-fit: cover;
+}
 
-.publications ol.bibliography li .hidden.open { max-height: 100em; -webkit-transition: 0.15s ease; -moz-transition: 0.15s ease; -ms-transition: 0.15s ease; -o-transition: 0.15s ease; transition: all 0.15s ease; }
-
-.publications ol.bibliography li div.abstract.hidden { border: dashed 1px var(--global-bg-color); }
-
-.publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
-
-.publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: 123px; width: 270px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: cover; }
+@media (max-width: 600px) {
+  .publications ol.bibliography > li {
+    grid-template-columns: 28px 1fr;
+    column-gap: 10px;
+  }
+  .publications .title { font-size: 1rem; }
+}

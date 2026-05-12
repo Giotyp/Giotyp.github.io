@@ -35,16 +35,30 @@ description: George Typaldos academic portfolio.
 #github_username:  jekyll
 
 google_scholar: https://scholar.google.com/citations?hl=en&user=8o1DaswAAAAJ
-cv_link: assets/files/CV_GT.pdf
+cv_link: /assets/files/CV_GT.pdf
 github_link: https://github.com/Giotyp
 linkedin: https://www.linkedin.com/in/george-typaldos
 
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/images/photo.jpg
-favicon: ./assets/images/favicon.png
-favicon_dark: ./assets/images/favicon.png
+# Images (e.g., your profile picture and your website's favicon)
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively.
+# Paths are site-absolute (leading "/") so they resolve correctly on subpages
+# when piped through `| relative_url` in the layout.
+avatar: /assets/images/photo.jpg
+favicon: /assets/images/favicon.png
+favicon_dark: /assets/images/favicon.png
+
+
+# Navigation — order matters; rendered top-to-bottom in the sidebar.
+# `url` is matched against page.url to determine the active page.
+nav:
+  - { label: "about",          url: "/" }
+  - { label: "education",      url: "/education/" }
+  - { label: "research",       url: "/research/" }
+  - { label: "news",           url: "/news/" }
+  - { label: "publications",   url: "/publications/" }
+  - { label: "teaching",       url: "/teaching/" }
+  - { label: "certifications", url: "/certifications/" }
 
 
 # Build settings
