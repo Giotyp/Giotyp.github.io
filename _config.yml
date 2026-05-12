@@ -58,6 +58,7 @@ nav:
   - { label: "news",           url: "/news/" }
   - { label: "publications",   url: "/publications/" }
   - { label: "teaching",       url: "/teaching/" }
+  - { label: "service",        url: "/service/" }
   - { label: "certifications", url: "/certifications/" }
 
 

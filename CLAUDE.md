@@ -40,6 +40,7 @@ The site is a **multi-page** academic portfolio. Each section lives in its own t
 | `publications.md`   | `/publications/`   | `publications`   |
 | `teaching.md`       | `/teaching/`       | `teaching`       |
 | `certifications.md` | `/certifications/` | `certifications` |
+| `service.md`        | `/service/`        | `service`        |
 
 Every page declares `layout: homepage`, a `title`, a `permalink`, and a `nav_key`. The `nav_key` is rendered as `~/<key>` in the small monospace page-meta header at the top of the content column (e.g. `~/research`).
 
