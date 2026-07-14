@@ -36,6 +36,7 @@ The site is a **multi-page** academic portfolio. Each section lives in its own t
 | `index.md`          | `/`                | `about`          |
 | `education.md`      | `/education/`      | `education`      |
 | `research.md`       | `/research/`       | `research`       |
+| `projects.md`       | `/projects/`       | `projects`       |
 | `news.md`           | `/news/`           | `news`           |
 | `publications.md`   | `/publications/`   | `publications`   |
 | `teaching.md`       | `/teaching/`       | `teaching`       |
@@ -60,6 +61,7 @@ These class hooks live in `_sass/minimal-light.scss` and are how each page build
 - `.log` / `.log li > .ts + .entry [+ .sub]` — Two-column timeline. Used by `news.md`, `education.md`, `teaching.md`. The `.ts` column is monospace cobalt, the `.entry` is serif body.
 - `.interests` / `.interests li > .field + .desc` — Used by `research.md`. The `.field` is a monospace lowercase tag (e.g. `computer-systems`) followed by a serif description.
 - `.tag-row` / `.tag` — Small monospace tag chips with the cobalt accent background.
+- `.project-list` / `.project-list li > .head (.name + .links a.tag) + .desc + .tag-row` — Used by `projects.md`. Each item has a `.head` row with a monospace cobalt `.name` and right-aligned `.links` (bare accent-colored icon links, no chip background — Font Awesome `fab fa-github` / `fas fa-scroll`), a smaller-font serif `.desc`, and a `.tag-row` of tech tags.
 - `.cert-group` / `.cert-group .org + .cert-list li > <span> + .when` — Used by `certifications.md`. Each group has an organization heading and a list of items with a right-aligned monospace date column.
 - `.page-meta` — Auto-rendered by the layout at the top of every content column. Shows `~/<nav_key>` with a blinking caret.
 

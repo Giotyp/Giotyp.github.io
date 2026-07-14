@@ -455,6 +455,42 @@ email {
 }
 .interests .desc { color: var(--ink-soft); }
 
+/* `.project-list` — showcase entries: highlighted title + link chips, then a smaller description and tech tags */
+.project-list { list-style: none; padding: 0; margin: 0; }
+.project-list li {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--rule);
+}
+.project-list li:last-child { border-bottom: 0; }
+.project-list .head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.project-list .name {
+  font-family: 'IBM Plex Mono', Menlo, monospace;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+.project-list .links { display: flex; gap: 12px; flex-wrap: wrap; }
+/* bare icon links — accent glyph, no chip background */
+.project-list .links a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+}
+.project-list .links a i { font-size: 1.05rem; line-height: 1; }
+.project-list .links a:hover { color: var(--ink); }
+.project-list .desc {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  margin: 6px 0 10px;
+}
+
 /* `.cert-group` for certifications page */
 .cert-group { margin-bottom: 1.8em; }
 .cert-group .org {

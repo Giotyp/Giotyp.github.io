@@ -55,6 +55,7 @@ nav:
   - { label: "about",          url: "/" }
   - { label: "education",      url: "/education/" }
   - { label: "research",       url: "/research/" }
+  - { label: "projects",       url: "/projects/" }
   - { label: "news",           url: "/news/" }
   - { label: "publications",   url: "/publications/" }
   - { label: "teaching",       url: "/teaching/" }
