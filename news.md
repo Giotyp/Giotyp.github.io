@@ -9,6 +9,10 @@ permalink: /news/
 
 <ul class="log">
   <li>
+    <span class="ts">2026-07</span>
+    <span class="entry">Attended <a href="https://www.usenix.org/conference/osdi26"><strong>OSDI 2026</strong></a>, Seattle, WA.</span>
+  </li>
+  <li>
     <span class="ts">2025-12</span>
     <span class="entry">
       New paper <em>"Embedding Alignment in Code Generation for Audio"</em> at <strong>NeurIPS AI4Music Workshop</strong>, San Diego, CA.

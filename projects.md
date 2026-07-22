@@ -25,4 +25,18 @@ permalink: /projects/
       <span class="tag">task-graph</span>
     </div>
   </li>
+  <li>
+    <div class="head">
+      <span class="name">GPU-Roofline-Python</span>
+      <span class="links">
+        <a href="https://github.com/Giotyp/GPU-Roofline-Python" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+      </span>
+    </div>
+    <span class="desc">A command-line tool to plot roofline models for NVIDIA GPU kernels from profiler output. It supports a wide range of NVIDIA GPU families, from Volta to Blackwell.</span>
+    <div class="tag-row">
+      <span class="tag">GPU</span>
+      <span class="tag">python</span>
+      <span class="tag">Roofline-model</span>
+    </div>
+  </li>
 </ul>
